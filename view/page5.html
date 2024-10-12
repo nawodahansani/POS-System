@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System - Order</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-item a {
+            color: #000;
+        }
+        .btn-custom {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .btn-add {
+            background-color: #00a2ff;
+            color: white;
+        }
+        .btn-place-order {
+            background-color: #ff5e57;
+            color: white;
+        }
+        .order-summary {
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="logo.png" width="30" height="30" alt="POS Logo"> POS System
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Container -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Order Form Section -->
+        <div class="col-md-8">
+            <div class="form-container">
+                <h3 class="mb-4"><i class="fas fa-shopping-cart"></i> Order</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderId">Order Id</label>
+                            <input type="text" class="form-control" id="orderId" placeholder="Order Id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="customerId">Customer Id</label>
+                            <input type="text" class="form-control" id="customerId" placeholder="Customer Id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Customer Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="itemCode">Item Code</label>
+                            <input type="text" class="form-control" id="itemCode" placeholder="Item Code">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="itemName">Item Name</label>
+                            <input type="text" class="form-control" id="itemName" placeholder="Item Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="unitPrice">Unit Price</label>
+                            <input type="number" class="form-control" id="unitPrice" placeholder="Unit Price">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="qtyOnHand">Qty On Hand</label>
+                            <input type="number" class="form-control" id="qtyOnHand" placeholder="Qty On Hand">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderQty">Order Qty</label>
+                            <input type="number" class="form-control" id="orderQty" placeholder="Order Qty">
+                        </div>
+                        <div class="form-group col-md-6 text-right align-self-end">
+                            <button type="button" class="btn btn-add">+ Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="col-md-4">
+            <div class="order-summary">
+                <h5>Total:</h5>
+                <div class="form-group">
+                    <label for="discount">Discount</label>
+                    <input type="number" class="form-control" id="discount" placeholder="Discount">
+                </div>
+                <div class="form-group">
+                    <label for="subTotal">Sub Total</label>
+                    <input type="number" class="form-control" id="subTotal" placeholder="Sub Total">
+                </div>
+                <div class="form-group">
+                    <label for="cash">Cash</label>
+                    <input type="number" class="form-control" id="cash" placeholder="Cash">
+                </div>
+                <div class="form-group">
+                    <label for="balance">Balance</label>
+                    <input type="number" class="form-control" id="balance" placeholder="Balance">
+                </div>
+                <button type="button" class="btn btn-place-order">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Below section can be used to display order details in a table -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <!-- You can add an orders table here -->
+        </div>
+    </div>
+</div>
+
+<!-- FontAwesome for icons (Optional) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Bootstrap JS and Dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
