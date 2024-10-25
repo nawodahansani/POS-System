@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #065006;
+            padding: 1rem;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            margin-right: 15px;
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigate_bar"  style="background-color: lightsalmon">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://img.icons8.com/ios-filled/50/000000/store.png" alt="Logo">
+            POS System
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-home" >Home</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-customer" >Customer</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-store">Store</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-order">Order</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" href="#">Log Out</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--login-->
+<!--<section class="login" id="login">
+    <div id="div1">
+        <button id="sign_in">Sign In</button>
+        <button id="sign_up">Sign Up</button>
+    </div>
+    <div id="div2">
+        <div id="ui1">
+            <h1>Welcome<br>To<br>POS<br>System</h1>
+        </div>
+    </div>
+</section>-->
+
+<!--dashboard-->
+<div  id="dashboard" class="container mt-5" >
+    <div class="row">
+        <div class="col-12">
+            <!-- Main content will go here -->
+        </div>
+    </div>
+</div>
+
+<!--customer-->
+<div id="customer" class="container mt-5">
+    <!-- Customer Form Title -->
+    <h2 class="text-center mb-4">Customer Form</h2>
+
+    <!-- Customer Form -->
+    <form>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+            </div>
+            <div class="col">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="mobileNumber" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter Mobile Number">
+            </div>
+            <div class="col">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter Address">
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary me-2" style="width: 150px;">Save</button>
+            <button type="button" class="btn btn-success me-2" style="width: 150px;">Update</button>
+            <button type="button" class="btn btn-danger" style="width: 150px;">Delete</button>
+        </div>
+    </form>
+
+    <!-- Customer Details Table -->
+    <div class="mt-5">
+        <h3>Customer Detail</h3>
+        <table class="table table-bordered">
+            <thead class="table-light">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Mobile Number</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Customer records go here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--<div class="container-fluid" id="customer">
+    <div class="row">
+        &lt;!&ndash; Sidebar &ndash;&gt;
+        <div class="col-md-3 sidebar">
+            <button class="btn btn-primary w-100 mb-3">+ Add New Customer</button>
+            <button class="btn btn-success w-100 mb-3">Search Customer</button>
+            <button class="btn btn-dark w-100">View All Customer</button>
+        </div>
+
+        &lt;!&ndash; Form Section &ndash;&gt;
+        <div class="col-md-9">
+            <div class="form-section mt-4">
+                <h3><img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="Customer Icon" width="30"> Customer</h3>
+                <form>
+                    <input type="text" class="form-control" placeholder="Customer Id">
+                    <input type="text" class="form-control" placeholder="Customer Name">
+                    <input type="text" class="form-control" placeholder="Address">
+                    <input type="text" class="form-control" placeholder="Contact NO">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-save me-2">Save</button>
+                        <button type="button" class="btn btn-clear">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--item-->
+<div id="item" class="container mt-5">
+    <!-- Item Form Title -->
+    <h2 class="text-center mb-4">Item Form</h2>
+
+    <!-- Item Form -->
+    <form>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="itemName" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="itemName" placeholder="Enter Item Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="qty" class="form-label">Qty</label>
+                <input type="number" class="form-control" id="qty" placeholder="Enter Quantity">
+            </div>
+            <div class="col">
+                <label for="unitPrice" class="form-label">Unit Price</label>
+                <input type="number" step="0.01" class="form-control" id="unitPrice" placeholder="Enter Unit Price">
+            </div>
+        </div>
+
+        <!-- Action Buttons with d-flex justify-content-end -->
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary me-2" style="width: 150px;">Save</button>
+            <button type="button" class="btn btn-success me-2" style="width: 150px;">Update</button>
+            <button type="button" class="btn btn-danger" style="width: 150px;">Delete</button>
+        </div>
+    </form>
+
+    <!-- Item Details Table -->
+    <div class="mt-5">
+        <h3>Item Detail</h3>
+        <table class="table table-bordered">
+            <thead class="table-light">
+            <tr>
+                <th>Item Name</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Item records go here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--<div class="container mt-5" id="item">
+    <div class="row">
+        &lt;!&ndash; Sidebar Section &ndash;&gt;
+        <div class="col-md-3">
+            <button class="btn btn-primary btn-custom">+ Add New Item</button>
+            <button class="btn btn-success btn-custom">Search Item</button>
+            <button class="btn btn-dark btn-custom">View All Item</button>
+        </div>
+
+        &lt;!&ndash; Form Section &ndash;&gt;
+        <div class="col-md-9">
+            <div class="form-container">
+                <h3 class="mb-4">Store</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="itemCode">Item Code</label>
+                        <input type="text" class="form-control" id="itemCode" placeholder="Enter item code">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemName">Item Name</label>
+                        <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                    </div>
+                    <div class="form-group">
+                        <label for="unitPrice">Unit Price</label>
+                        <input type="number" class="form-control" id="unitPrice" placeholder="Enter unit price">
+                    </div>
+                    <div class="form-group">
+                        <label for="qtyOnHand">Qty On Hand</label>
+                        <input type="number" class="form-control" id="qtyOnHand" placeholder="Enter quantity on hand">
+                    </div>
+                    <button type="submit" class="btn btn-save">Save</button>
+                    <button type="reset" class="btn btn-clear">Clear</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--order-->
+<div id="order" class="container mt-5">
+    <div class="row">
+        <!-- Order Form Section -->
+        <div class="col-md-8">
+            <div class="form-container" style="background-color: #f0f0f0;padding:20px;border-radius: 10px">
+                <h3 class="mb-4"><i class="fas fa-shopping-cart"></i> Order</h3>
+                <form>
+                    <!--<div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderId">Order Id</label>
+                            <input type="text" class="form-control" id="orderId" placeholder="Order Id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                    </div>-->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="customerId">Customer Id</label>
+                            <input type="text" class="form-control" id="customerId" placeholder="Customer Id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Customer Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="itemCode">Item Code</label>
+                            <input type="text" class="form-control" id="itemCode" placeholder="Item Code">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="itemName">Item Name</label>
+                            <input type="text" class="form-control" id="itemName1" placeholder="Item Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="unitPrice">Unit Price</label>
+                            <input type="number" class="form-control" id="unitPrice1" placeholder="Unit Price">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="qtyOnHand">Qty On Hand</label>
+                            <input type="number" class="form-control" id="qtyOnHand" placeholder="Qty On Hand">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderQty">Order Qty</label>
+                            <input type="number" class="form-control" id="orderQty" placeholder="Order Qty">
+                        </div>
+                        <div class="form-group col-md-6 text-right align-self-end">
+                            <button type="button" class="btn btn-add" style="background-color: #00a2ff;color: white;">+ Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="col-md-4">
+            <div class="order-summary" style="padding: 20px; background-color: #f0f0f0;border-radius: 10px;">
+                <h5>Total:</h5>
+                <div class="form-group">
+                    <label for="discount">Discount</label>
+                    <input type="number" class="form-control" id="discount" placeholder="Discount">
+                </div>
+                <div class="form-group">
+                    <label for="subTotal">Sub Total</label>
+                    <input type="number" class="form-control" id="subTotal" placeholder="Sub Total">
+                </div>
+                <div class="form-group">
+                    <label for="cash">Cash</label>
+                    <input type="number" class="form-control" id="cash" placeholder="Cash">
+                </div>
+                <div class="form-group">
+                    <label for="balance">Balance</label>
+                    <input type="number" class="form-control" id="balance" placeholder="Balance">
+                </div>
+                <button type="button" class="btn btn-place-order" style="background-color: #ff5e57;color: white;">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Table Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="table-container">
+                <h5>Cart</h5>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr>
+                        <td>101</td>
+                        <td>Sample Item</td>
+                        <td>2</td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                        <td>
+                            <button class="btn btn-sm btn-danger">Remove</button>
+                        </td>
+                    </tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="container mt-5" id="order">
+    <div class="row">
+        &lt;!&ndash; Order Form Section &ndash;&gt;
+        <div class="col-md-8">
+            <div class="form-container">
+                <h3 class="mb-4"><i class="fas fa-shopping-cart"></i> Order</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderId">Order Id</label>
+                            <input type="text" class="form-control" id="orderId" placeholder="Order Id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="customerId">Customer Id</label>
+                            <input type="text" class="form-control" id="customerId" placeholder="Customer Id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Customer Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="itemCode">Item Code</label>
+                            <input type="text" class="form-control" id="itemCode1" placeholder="Item Code">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="itemName">Item Name</label>
+                            <input type="text" class="form-control" id="itemName1" placeholder="Item Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="unitPrice">Unit Price</label>
+                            <input type="number" class="form-control" id="unitPrice1" placeholder="Unit Price">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="qtyOnHand">Qty On Hand</label>
+                            <input type="number" class="form-control" id="qtyOnHand1" placeholder="Qty On Hand">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderQty">Order Qty</label>
+                            <input type="number" class="form-control" id="orderQty" placeholder="Order Qty">
+                        </div>
+                        <div class="form-group col-md-6 text-right align-self-end">
+                            <button type="button" class="btn btn-add">+ Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        &lt;!&ndash; Order Summary Section &ndash;&gt;
+        <div class="col-md-4">
+            <div class="order-summary">
+                <h5>Total:</h5>
+                <div class="form-group">
+                    <label for="discount">Discount</label>
+                    <input type="number" class="form-control" id="discount" placeholder="Discount">
+                </div>
+                <div class="form-group">
+                    <label for="subTotal">Sub Total</label>
+                    <input type="number" class="form-control" id="subTotal" placeholder="Sub Total">
+                </div>
+                <div class="form-group">
+                    <label for="cash">Cash</label>
+                    <input type="number" class="form-control" id="cash" placeholder="Cash">
+                </div>
+                <div class="form-group">
+                    <label for="balance">Balance</label>
+                    <input type="number" class="form-control" id="balance" placeholder="Balance">
+                </div>
+                <button type="button" class="btn btn-place-order">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    &lt;!&ndash; Below section can be used to display order details in a table &ndash;&gt;
+    <div class="row mt-4">
+        <div class="col-md-12">
+            &lt;!&ndash; You can add an orders table here &ndash;&gt;
+        </div>
+    </div>
+</div>-->
+
+<!--Script-->
+<script>
+    document.getElementById("dashboard").style.display = "none";
+    document.getElementById("customer").style.display = "none";
+    document.getElementById("item").style.display = "none";
+    document.getElementById("order").style.display = "none";
+
+    document.getElementById("nav-home").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "block";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "none";
+    });
+
+    document.getElementById("nav-customer").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "block";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "none";
+    });
+
+    document.getElementById("nav-store").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "block";
+        document.getElementById("order").style.display = "none";
+    });
+
+    document.getElementById("nav-order").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "block";
+    });
+</script>
+<!--<script>
+    document.getElementById("login").style.display = "none";
+    document.getElementById("dashboard").style.display = "none";
+    document.getElementById("customer").style.display = "none";
+    document.getElementById("item").style.display = "none";
+    document.getElementById("order").style.display = "none";
+
+    document.getElementById("nav-home").addEventListener("click",function (){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("dashboard").style.display = "block";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "none";
+    });
+
+    document.getElementById("nav-customer").addEventListener("click",function (){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "block";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "none";
+    });
+
+    document.getElementById("nav-store").addEventListener("click",function (){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "block";
+        document.getElementById("order").style.display = "none";
+    });
+
+    document.getElementById("nav-order").addEventListener("click",function (){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "block";
+    });
+
+
+</script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS and Dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
