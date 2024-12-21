@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e42d35aa-772b-44b0-b1b5-b28fa91571b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/jquery-3.7.1.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/page2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/page3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/page 4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/page3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/page5.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/ui3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/Store.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assest/img/crystel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/page1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/ui1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/ui2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/ui1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/ui2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,23 +44,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.customer.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "spa",
-    "kotlin-language-version-configured": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.customer.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/RedMark/IdeaProjects/POS-System-nim&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\RedMark\IdeaProjects\POS-System\assest\img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/POS-System/view/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,6 +97,32 @@
       <workItem from="1728728474492" duration="3744000" />
       <workItem from="1729317228344" duration="4786000" />
       <workItem from="1729779610836" duration="9491000" />
+      <workItem from="1729917312552" duration="2810000" />
+      <workItem from="1729931062873" duration="1400000" />
+      <workItem from="1730381900860" duration="3709000" />
+      <workItem from="1730394895028" duration="3616000" />
+      <workItem from="1730476680957" duration="2635000" />
+      <workItem from="1730515778194" duration="18599000" />
+      <workItem from="1730613922771" duration="741000" />
+      <workItem from="1730647020408" duration="6069000" />
+      <workItem from="1730738094913" duration="661000" />
+      <workItem from="1730881572076" duration="4614000" />
+      <workItem from="1730964459735" duration="4285000" />
+      <workItem from="1730997178251" duration="5841000" />
+      <workItem from="1732163545464" duration="64000" />
+      <workItem from="1732183954682" duration="84000" />
+      <workItem from="1732330236392" duration="37000" />
+      <workItem from="1732330667288" duration="56000" />
+      <workItem from="1732538501542" duration="598000" />
+      <workItem from="1734362948775" duration="647000" />
+      <workItem from="1734404099310" duration="25000" />
+      <workItem from="1734448382732" duration="8756000" />
+      <workItem from="1734497447162" duration="13398000" />
+      <workItem from="1734546783573" duration="2034000" />
+      <workItem from="1734590978341" duration="1034000" />
+      <workItem from="1734670204805" duration="10795000" />
+      <workItem from="1734686376595" duration="629000" />
+      <workItem from="1734722125711" duration="22000" />
     </task>
     <servers />
   </component>
